@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+
+    <!-- Background color for the food category -->
+    <color name="category_food">#FD8E09</color>
+
+    <!-- Background color for the culture members category -->
+    <color name="category_culture">#379237</color>
+
+    <!-- Background color for the night life category -->
+    <color name="category_night_life">#8800A0</color>
+
+    <!-- Background color for the outdoors category -->
+    <color name="category_outdoors">#16AFCA</color>
+</resources>
