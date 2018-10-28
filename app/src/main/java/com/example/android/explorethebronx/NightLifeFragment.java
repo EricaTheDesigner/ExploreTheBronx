@@ -26,12 +26,12 @@ public class NightLifeFragment extends Fragment {
             View rootView = inflater.inflate(R.layout.location_list, container, false);
 
             // Create a list of words
-            final ArrayList<Location> locations = new ArrayList<Location>();
-            locations.add(new Location("Charlies Bar & Kitchen", "Located at the base of a clock tower.", R.drawable.charlies));
-            locations.add(new Location("Krystal Bar & Lounge", "Great drinks, hookah and Friday happy hours.", R.drawable.krystal));
-            locations.add(new Location("Bronx Alehouse", "Free popcorn and a huge selection of ", R.drawable.bxalehouse));
-            locations.add(new Location("The Bronx Public", "Sunday boozy hiphop brunch is where the party's at.", R.drawable.bxpublic));
-            locations.add(new Location("The Living Room II", "Live shows with Grandmaster's will keep you on your feet.", R.drawable.livingroom));
+            final ArrayList<Location> locations = new ArrayList<>();
+            locations.add(new Location(getString(R.string.night_location_1), getString(R.string.night_descrip_1), R.drawable.charlies));
+            locations.add(new Location(getString(R.string.night_location_2), getString(R.string.night_descrip_2), R.drawable.krystal));
+            locations.add(new Location(getString(R.string.night_location_3), getString(R.string.night_descrip_3), R.drawable.bxalehouse));
+            locations.add(new Location(getString(R.string.night_location_4), getString(R.string.night_descrip_4), R.drawable.bxpublic));
+            locations.add(new Location(getString(R.string.night_location_5), getString(R.string.night_descrip_5), R.drawable.livingroom));
 
             // Create an {@link LocationAdapter}, whose data source is a list of {@link Location}s. The
             // adapter knows how to create list items for each item in the list.

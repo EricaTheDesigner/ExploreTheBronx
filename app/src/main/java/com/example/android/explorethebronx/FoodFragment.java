@@ -31,12 +31,12 @@ public class FoodFragment extends Fragment {
         View rootView = inflater.inflate(R.layout.location_list, container, false);
 
         // Create a list of words
-        final ArrayList<Location> locations = new ArrayList<Location>();
-        locations.add(new Location("City Island Lobster House", "Located in the historic seaport community of City Island.", R.drawable.cityisland));
-        locations.add(new Location("Arthur Avenue Retail Market", "Home of several markets in Little Italy in the Bronx.", R.drawable.arthurave));
-        locations.add(new Location("188 Bakery Cuchifrito's", "Classic Dominican Cuchifrito, located on the infamous Fordham Rd.", R.drawable.cuchifrito));
-        locations.add(new Location("Fish N' Ting", "Rasta pasta, flaming Bob Marley shots, and oxtail at this gem. ", R.drawable.fishnting));
-        locations.add(new Location("Bognan International West African Restaurant", "Spicy food and large portions, a short walk from Crotona Park. ", R.drawable.bognan));
+        final ArrayList<Location> locations = new ArrayList<>();
+        locations.add(new Location(getString(R.string.food_location_1), getString(R.string.food_descrip_1), R.drawable.cityisland));
+        locations.add(new Location(getString(R.string.food_location_2), getString(R.string.food_descrip_2), R.drawable.arthurave));
+        locations.add(new Location(getString(R.string.food_location_3), getString(R.string.food_descrip_3), R.drawable.cuchifrito));
+        locations.add(new Location(getString(R.string.food_location_4), getString(R.string.food_descrip_4), R.drawable.fishnting));
+        locations.add(new Location(getString(R.string.food_location_5), getString(R.string.food_descrip_5), R.drawable.bognan));
 
         // Create an {@link LocationAdapter}, whose data source is a list of {@link Location}s. The
         // adapter knows how to create list items for each item in the list.

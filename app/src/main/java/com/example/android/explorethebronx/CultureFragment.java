@@ -26,14 +26,14 @@ public class CultureFragment extends Fragment {
             View rootView = inflater.inflate(R.layout.location_list, container, false);
 
             // Create a list of words
-            final ArrayList<Location> locations = new ArrayList<Location>();
-            locations.add(new Location("Bronx Museum of the Arts", "Free admission at this hidden gem", R.drawable.bronxmuseumsmall));
-            locations.add(new Location("The Edgar Allan Poe Cottage", "The former home of American writer Edgar Allan Poe.", R.drawable.eaphouse));
-            locations.add(new Location("Bartow-Pell Mansion Museum ", "Built between 1836 and 1842, opened as a museum in 1946", R.drawable.bartowpell));
-            locations.add(new Location("BronxArtSpace", "Non-profit gallery that promotes underrepresented and emerging artists and curators ", R.drawable.bronxartspace));
-            locations.add(new Location("Bronx Documentary Center", "Free guided tours and home to the Bronx Photo League.", R.drawable.documentarycenter));
-            locations.add(new Location("WallWorks Gallery", "A contemporary gallery dedicated to bringing art back uptown.", R.drawable.wallworks));
-            locations.add(new Location("Yankee Stadium", "The home ballpark of the New York Yankees.", R.drawable.yankee));
+            final ArrayList<Location> locations = new ArrayList<>();
+            locations.add(new Location(getString(R.string.culture_location_1), getString(R.string.culture_descrip_1), R.drawable.bronxmuseumsmall));
+            locations.add(new Location(getString(R.string.culture_location_2), getString(R.string.culture_descrip_2), R.drawable.eaphouse));
+            locations.add(new Location(getString(R.string.culture_location_3), getString(R.string.culture_descrip_3), R.drawable.bartowpell));
+            locations.add(new Location(getString(R.string.culture_location_4), getString(R.string.culture_descrip_4), R.drawable.bronxartspace));
+            locations.add(new Location(getString(R.string.culture_location_5), getString(R.string.culture_descrip_5), R.drawable.documentarycenter));
+            locations.add(new Location(getString(R.string.culture_location_6), getString(R.string.culture_descrip_6), R.drawable.wallworks));
+            locations.add(new Location(getString(R.string.culture_location_7), getString(R.string.culture_descrip_7), R.drawable.yankee));
 
             // Create an {@link LocationAdapter}, whose data source is a list of {@link Location}s. The
             // adapter knows how to create list items for each item in the list.

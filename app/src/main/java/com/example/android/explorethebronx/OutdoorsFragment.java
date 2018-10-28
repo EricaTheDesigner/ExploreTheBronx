@@ -17,7 +17,7 @@ import java.util.ArrayList;
 public class OutdoorsFragment extends Fragment {
 
         public OutdoorsFragment() {
-            // Required empty public constructord
+            // Required empty public constructor
         }
 
         @Override
@@ -26,14 +26,14 @@ public class OutdoorsFragment extends Fragment {
             View rootView = inflater.inflate(R.layout.location_list, container, false);
 
             // Create a list of words
-            final ArrayList<Location> locations = new ArrayList<Location>();
-            locations.add(new Location("Wave Hill Public Gardens", "28-acre estate overlooking the Hudson. ", R.drawable.wavehill));
-            locations.add(new Location("New York Botanical Garden", "250-acre site that supports over one million living plants.", R.drawable.botanicalgarden));
-            locations.add(new Location("High Bridge", "NYC's oldest bridge, reopened in 2015 as a pedestrian walkway.", R.drawable.highbridge));
-            locations.add(new Location("Bronx River", "Enjoy free canoeing at New York's only freshwater river.", R.drawable.bronxriver));
-            locations.add(new Location("Pelham Bay Park", "Comprised on 2,772 acres, this is the largest park in NYC.", R.drawable.pelham));
-            locations.add(new Location("The Bronx Zoo", "The largest metropolitan zoo in the United States.", R.drawable.bronxzoo));
-            locations.add(new Location("Woodlawn Cemetery", "Home to icons such as Miles Davis, Herman Melville, and Fiorello La Guardia.", R.drawable.woodlawncemetery));
+            final ArrayList<Location> locations = new ArrayList<>();
+            locations.add(new Location(getString(R.string.outdoor_location_1), getString(R.string.outdoor_descrip_1), R.drawable.wavehill));
+            locations.add(new Location(getString(R.string.outdoor_location_2), getString(R.string.outdoor_descrip_2), R.drawable.botanicalgarden));
+            locations.add(new Location(getString(R.string.outdoor_location_3), getString(R.string.outdoor_descrip_3), R.drawable.highbridge));
+            locations.add(new Location(getString(R.string.outdoor_location_4), getString(R.string.outdoor_descrip_4), R.drawable.bronxriver));
+            locations.add(new Location(getString(R.string.outdoor_location_5), getString(R.string.outdoor_descrip_5), R.drawable.pelham));
+            locations.add(new Location(getString(R.string.outdoor_location_6), getString(R.string.outdoor_descrip_6), R.drawable.bronxzoo));
+            locations.add(new Location(getString(R.string.outdoor_location_7), getString(R.string.outdoor_descrip_7), R.drawable.woodlawncemetery));
 
             // Create an {@link LocationAdapter}, whose data source is a list of {@link Location}s. The
             // adapter knows how to create list items for each item in the list.
